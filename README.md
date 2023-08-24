@@ -8,6 +8,7 @@ There are few options.
 run main.java in your IDE.
 ### Your OS cmd
 write the following commands from the folder where you have saved the source code:
+
 `javac *.java`
 `java main.java`
 ### EXE
