@@ -10,6 +10,7 @@ run main.java in your IDE.
 write the following commands from the folder where you have saved the source code:
 
 `javac *.java`
+
 `java main.java`
 ### EXE
 soon I will add .exe file of the GCMD so everyone will be able to use it.
