@@ -1,0 +1,22 @@
+Multiline Label *
+Parser Result Class
+Commands Parsing
+Commands Execution
+Change Color To Commands In The GCMD GUI
+
+*:
+Write String
+Delete Characters
+
+Commands To Add:
+help
+about
+echo <TEXT>
+background <RED_VALUE> <GREEN_VALUE> <BLUE_VALUE>
+background <DEFAULT_COLOR>
+exit
+
+Font (Default) - Consolas
+Regular Text (Default) - White
+Commands Highlighted Color (Default) - Cyan
+Background Color (Default) - Black
