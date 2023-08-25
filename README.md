@@ -16,3 +16,9 @@ write the following commands from the folder where you have saved the source cod
 soon I will add .exe file of the GCMD so everyone will be able to use it.
 
 ![image](https://github.com/Gavriel770U/GCMD/assets/71229809/235d39dc-0d93-4ea2-b6b3-8c9b6bf50efb)
+__________________________________________________________________
+## Features
+### Keywords Highlighting 
+For now it is very simple and has some issues that should be fixed.
+![image](https://github.com/Gavriel770U/GCMD/assets/71229809/e410dc64-79a6-433b-a4a6-4abdbbde113e)
+
