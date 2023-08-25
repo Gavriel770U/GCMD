@@ -80,6 +80,11 @@ public class Console implements KeyListener
         {
             /* skip Shifts */
         }
+        else if(8 == (int)(c))
+        {
+            /* Backspace has been pressed */
+            this.multilineVisualOutput.delete(1);
+        }
         else
         {
             this.multilineVisualOutput.write(Character.toString(c));

@@ -83,8 +83,24 @@ public class MultilineLabel
         }
     }
 
+    // TEMP: delete characters from the multiline
+    /** NOTE: has some issues: deletes '>' that cannot be deleted, 
+              issues with the highlighted commands (HTML),
+              and others...
+    */
+
     public void delete(int amount)
     {
-        
+        for(int i = 0; i<amount; i++)
+        {
+            String lineContent = this.multiline.get(this.currentLine).getText();
+            if(lineContent.length() - 1 < 0)
+            {
+                this.currentLine--;
+                lineContent = this.multiline.get(this.currentLine).getText();
+            }
+            lineContent = lineContent.substring(0, lineContent.length()-1);
+            this.multiline.get(this.currentLine).setText(lineContent);
+        }
     }
 }
