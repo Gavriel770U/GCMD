@@ -10,7 +10,7 @@ public class MultilineLabel
 {
     private final static String FIRST_OUTPUT = "> ";
 
-    private ArrayList<JLabel> multiline = new ArrayList<>();
+    public ArrayList<JLabel> multiline = new ArrayList<>();
     private Font font;
     private int frameWidth;
     private int currentLine;
@@ -61,7 +61,8 @@ public class MultilineLabel
     {
         FontMetrics fontMetrics = multiline.get(0).getFontMetrics(this.font);
         // initialize with the width of the current line that is already filled
-        int totalWidth = calcStringWidth(this.multiline.get(this.currentLine).getText(), this.font);
+        String adj = this.multiline.get(this.currentLine).getText().replace("<html><nobr>", "").replace("</nobr></html>", "").replace("<font color='blue'>", "").replace("</font>", "");
+        int totalWidth = calcStringWidth(adj, this.font);
 
         for (char c : input.toCharArray())
         {
@@ -80,5 +81,10 @@ public class MultilineLabel
             this.multiline.get(this.currentLine).setText(this.multiline.get(this.currentLine).getText() + c);
             totalWidth += charWidth;
         }
+    }
+
+    public void delete(int amount)
+    {
+        
     }
 }

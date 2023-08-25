@@ -16,7 +16,6 @@ public class Console implements KeyListener
     private JFrame frame;
     private JPanel panel;
     private Font font;
-    private JLabel visualOutput;
     private MultilineLabel multilineVisualOutput;
     private String output = "> ";
     private Parser parser;
@@ -57,6 +56,8 @@ public class Console implements KeyListener
 
         this.multilineVisualOutput = new MultilineLabel(this.panel, FRAME_WIDTH, FRAME_HEIGHT, this.font);
 
+        this.parser = new Parser(this.multilineVisualOutput);
+
         this.frame = new JFrame();
         initFrame(this.frame, this.panel);
     }
@@ -84,6 +85,8 @@ public class Console implements KeyListener
             this.multilineVisualOutput.write(Character.toString(c));
         }
 
+        this.parser.parse();
+
         println((int)c);
     }
 
@@ -95,6 +98,6 @@ public class Console implements KeyListener
     @Override
     public String toString()
     {
-        return "GCMD\nSource code: https://github.com/Gavriel770U";
+        return "GCMD\nSource code: https://github.com/Gavriel770U/GCMD";
     }
 }
