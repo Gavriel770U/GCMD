@@ -18,5 +18,5 @@ exit
 
 Font (Default) - Consolas
 Regular Text (Default) - White
-Commands Highlighted Color (Default) - Cyan
+Commands Highlighted Color (Default) - Blue
 Background Color (Default) - Black
