@@ -21,4 +21,9 @@ __________________________________________________________________
 ### Keywords Highlighting 
 For now it is very simple and has some issues that should be fixed.
 ![image](https://github.com/Gavriel770U/GCMD/assets/71229809/e410dc64-79a6-433b-a4a6-4abdbbde113e)
-
+### Commands (Shall be added soon...)
+* help
+* about
+* echo
+* background
+* exit
