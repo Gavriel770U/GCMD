@@ -14,3 +14,5 @@ write the following commands from the folder where you have saved the source cod
 `java main.java`
 ### EXE
 soon I will add .exe file of the GCMD so everyone will be able to use it.
+
+![image](https://github.com/Gavriel770U/GCMD/assets/71229809/235d39dc-0d93-4ea2-b6b3-8c9b6bf50efb)
