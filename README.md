@@ -46,6 +46,8 @@ In the **Jar** field choose or write the source `.jar` file that will be copied 
 
 *NOTE: The original `.ico` of the GCMD is in the source with the `.exe` file.*
 
+In the **Java download URL** `field write https://www.java.com/en/download/`
+
 __________________________________________________________________
 ## Features
 ### Keywords Highlighting 
