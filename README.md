@@ -27,9 +27,20 @@ NOTE: before it, switch your directory to the `src` directory.
 
 `jar cfm GCMD.jar MANIFEST.MF *.class`
 ### EXE
-soon I will add `.exe` file of the GCMD so everyone will be able to use it.
+`.exe` of the current version of the GCMD exists in the source's main branch, and it is the easiest way to run GCMD.
 
 ![image](https://github.com/Gavriel770U/GCMD/assets/71229809/235d39dc-0d93-4ea2-b6b3-8c9b6bf50efb)
+__________________________________________________________________
+## Converting `.jar` To `.exe`
+If you updated the code and you have compiled the code and converted it into `.jar` and you want more users to use the version of the GCMD as executable and not as jar without downloading OpenJDK you can download the **launch4j** program in the link below:
+![link](https://sourceforge.net/projects/launch4j/)
+Then, when you finished the setup of the program, open it.
+Choose the **Basic** section, then in the **Output file** field choose or write the directory with filename in which the `.exe` will be saved.
+For instance: `C:\Users\your_user\Desktop\GCMD.exe`
+In the **Jar** field choose or write the source `.jar` file that will be copied and converted as `.exe`.
+*Optional: in the **Icon** field you can choose `.ico` image to be the icon of the `.exe`*
+*NOTE: The original `.ico` of the GCMD is in the source with the `.exe` file.*
+
 __________________________________________________________________
 ## Features
 ### Keywords Highlighting 
