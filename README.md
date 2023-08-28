@@ -14,7 +14,9 @@ Use the following commands from the folder where you have saved the source code:
 `java main.java`
 ### Jar
 Jar is basically a java executable, in this source in the `build` folder there will be all `.class` files and manifest (`.MF`) with `.jar`, so only if you update the code you can run this.
-The current version of the GCMD as `.jar` 
+
+The current version of the GCMD as `.jar` is inside the `build` folder so you can run it as regular application.
+
 Use the following commands in your OS cmd to create `.jar`:
 
 NOTE: before it, switch your directory to the `src` directory.
