@@ -12,6 +12,16 @@ write the following commands from the folder where you have saved the source cod
 `javac *.java`
 
 `java main.java`
+### Jar
+Jar is basically a java executable, in this source code in the build there will be all .class files and manifest with .jar, so only if you update the code you can run this.
+use the following commands in your OS cmd to create .jar:
+NOTE: before it change your directory to the src.
+
+`javac -d ../build *.java`
+
+`cd ../build`
+
+`jar cfm GCMD.jar MANIFEST.MF *.class`
 ### EXE
 soon I will add .exe file of the GCMD so everyone will be able to use it.
 
