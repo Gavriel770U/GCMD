@@ -5,16 +5,17 @@ __________________________________________________________________
 ## How to run?
 There are few options.
 ### IDE
-run main.java in your IDE.
+Run main.java in your IDE.
 ### Your OS cmd
-write the following commands from the folder where you have saved the source code:
+Use the following commands from the folder where you have saved the source code:
 
 `javac *.java`
 
 `java main.java`
 ### Jar
 Jar is basically a java executable, in this source code in the build there will be all .class files and manifest with .jar, so only if you update the code you can run this.
-use the following commands in your OS cmd to create .jar:
+
+Use the following commands in your OS cmd to create .jar:
 
 NOTE: before it, switch your directory to the src.
 
