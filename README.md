@@ -32,7 +32,7 @@ NOTE: before it, switch your directory to the `src` directory.
 ![image](https://github.com/Gavriel770U/GCMD/assets/71229809/235d39dc-0d93-4ea2-b6b3-8c9b6bf50efb)
 __________________________________________________________________
 ## Converting `.jar` To `.exe`
-If you updated the code and you have compiled the code and converted it into `.jar` and you want more users to use the version of the GCMD as executable and not as jar without downloading OpenJDK you can download the **[launch4j](https://sourceforge.net/projects/launch4j/)** program in the link below:
+If you updated the code and you have compiled the code and converted it into `.jar` and you want more users to use the version of the GCMD as executable and not as jar without downloading OpenJDK you can download the **[launch4j](https://sourceforge.net/projects/launch4j/)** program.
 
 Then, when you finished the setup of the program, open it.
 
