@@ -33,12 +33,19 @@ NOTE: before it, switch your directory to the `src` directory.
 __________________________________________________________________
 ## Converting `.jar` To `.exe`
 If you updated the code and you have compiled the code and converted it into `.jar` and you want more users to use the version of the GCMD as executable and not as jar without downloading OpenJDK you can download the **launch4j** program in the link below:
+
 ![link](https://sourceforge.net/projects/launch4j/)
+
 Then, when you finished the setup of the program, open it.
+
 Choose the **Basic** section, then in the **Output file** field choose or write the directory with filename in which the `.exe` will be saved.
+
 For instance: `C:\Users\your_user\Desktop\GCMD.exe`
+
 In the **Jar** field choose or write the source `.jar` file that will be copied and converted as `.exe`.
+
 *Optional: in the **Icon** field you can choose `.ico` image to be the icon of the `.exe`*
+
 *NOTE: The original `.ico` of the GCMD is in the source with the `.exe` file.*
 
 __________________________________________________________________
