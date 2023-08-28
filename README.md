@@ -48,11 +48,18 @@ In the **Jar** field choose or write the source `.jar` file that will be copied 
 
 In the **Java download URL** field write `https://www.java.com/en/download/`
 
+### Example:
+![image](https://github.com/Gavriel770U/GCMD/assets/71229809/79eae484-3fde-4a2f-85da-e913e264407f)
+
 Then, go to the **JRE** section and click on it.
 
 In the **Min JRE version** field write `1.4.0`
 
 *Optional: you can select `JDK required` and `64-Bit required`*
+
+### Example:
+![image](https://github.com/Gavriel770U/GCMD/assets/71229809/fe974388-f9e8-4513-9c98-0484ad8d4e52)
+
 
 __________________________________________________________________
 ## Features
