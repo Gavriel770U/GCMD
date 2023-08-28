@@ -60,7 +60,7 @@ In the **Min JRE version** field write `1.4.0`
 ### Example:
 ![image](https://github.com/Gavriel770U/GCMD/assets/71229809/fe974388-f9e8-4513-9c98-0484ad8d4e52)
 
-
+Then, press on ![image](https://github.com/Gavriel770U/GCMD/assets/71229809/23b481bd-abbb-4b70-8802-6a2a163cecd4) and choose a file directory and name that ends with `.exe` where the output executable shall be saved.
 __________________________________________________________________
 ## Features
 ### Keywords Highlighting 
