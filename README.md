@@ -1,6 +1,6 @@
 # GCMD - Gavriel's Command Line Console
 __________________________________________________________________
-A custom cmd in java using basic built-in swing and awt GUI.
+A custom cmd written in java using basic built-in javax.swing and java.awt GUI.
 __________________________________________________________________
 ## How to run?
 There are few options.
