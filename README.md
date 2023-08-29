@@ -74,3 +74,4 @@ For now it is very simple and has some issues that should be fixed.
 * echo
 * background
 * exit
+* clear
