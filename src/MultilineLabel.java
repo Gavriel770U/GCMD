@@ -103,4 +103,25 @@ public class MultilineLabel
             this.multiline.get(this.currentLine).setText(lineContent);
         }
     }
+
+    public void clear()
+    {
+        this.currentLine = 0;
+        for(int i = 0; i < this.multiline.size(); i++)
+        {
+            this.multiline.get(i).setText("");
+        }
+    } 
+
+    public String getTotalContent()
+    {
+        String totalContent = "";
+        
+        for(int i = 0; i < this.multiline.size(); i++)
+        {
+            totalContent += this.multiline.get(i).getText();
+        }
+
+        return totalContent;
+    }
 }

@@ -70,11 +70,13 @@ public class Console implements KeyListener
     @Override
     public void keyReleased(KeyEvent e)
     {
+        this.multilineVisualOutput.clear();
         char c = e.getKeyChar();
         println((int)(c));
-        if(c == '\n')
+        if('\n' == c)
         {
-            this.multilineVisualOutput.write("\n> ");
+            this.output += "\n> ";
+            //this.multilineVisualOutput.write("\n> ");
         }
         else if(65535 == (int)(c))
         {
@@ -82,14 +84,20 @@ public class Console implements KeyListener
         }
         else if(8 == (int)(c))
         {
-            /* Backspace has been pressed */
-            this.multilineVisualOutput.delete(1);
+            if(output.length() > 0)
+            {
+                /* Backspace has been pressed */
+                this.output = this.output.substring(0, this.output.length() - 1);
+                //this.multilineVisualOutput.delete(1);
+            }
         }
         else
         {
-            this.multilineVisualOutput.write(Character.toString(c));
+            this.output += c;
+            //this.multilineVisualOutput.write(Character.toString(c));
         }
 
+        this.multilineVisualOutput.write(this.output);
         this.parser.parse();
 
         println((int)c);
