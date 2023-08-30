@@ -1,6 +1,6 @@
 # GCMD - Gavriel's Command Line Console
 __________________________________________________________________
-A custom cmd written in java using basic built-in javax.swing and java.awt GUI.
+A custom cmd / CLI written in java using basic built-in javax.swing and java.awt GUI.
 ### IMPORTANT NOTE: all the `.exe` files that exists now are for Windows, and there is no guarantee that it will work for other OS such as Linux or macOS.
 ### IMPORTANT NOTE2: the `.exe` and `.jar` files sometimes will be the older versions of the GCMD until I will be satisfied by the updates before I publish them.
 __________________________________________________________________
