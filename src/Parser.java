@@ -1,12 +1,12 @@
 // בס"ד בעזה"י
 
-/* class to parse the gcmd custom commands */
+/* class to parse the GCMD custom commands */
 
 import java.util.*;
 
 public class Parser
 {
-    private String[] commands = {"help", "about", "echo", "background", "exit"};
+    private String[] commands = {" help ", " about ", " echo ", " background ", " exit ", " clear "};
     private MultilineLabel multiline;
 
     public Parser(MultilineLabel multiline)
@@ -14,24 +14,13 @@ public class Parser
         this.multiline = multiline;
     }
 
-    public ParserResult parse()
-    {
-        boolean start = true; 
-
-        if(start)
-        {
-
-        }
-        else
-        {
-
-        }
-
+    public void highlight()
+    {    
         // TEMP: simple highlighting for commands:
         // NOTE: doesn't support multiline command for now, doesn't work good with different commands on the same line.
-        for(int i = 0; i<this.multiline.multiline.size(); i++)
+        for(int i = 0; i < this.multiline.multiline.size(); i++)
         {
-            for(String str : commands)
+            for(String str : this.commands)
             {
                 if(this.multiline.multiline.get(i).getText().contains(str))
                 {
@@ -40,6 +29,12 @@ public class Parser
                 }
             }
         }
+        
+        System.out.println(this.multiline.searchString("echo"));
+    }
+
+    public ParserResult parse()
+    {
         return null;
     }
 }

@@ -107,6 +107,7 @@ public class MultilineLabel
     public void clear()
     {
         this.currentLine = 0;
+
         for(int i = 0; i < this.multiline.size(); i++)
         {
             this.multiline.get(i).setText("");
@@ -123,5 +124,41 @@ public class MultilineLabel
         }
 
         return totalContent;
+    }
+
+    public ArrayList<String> getLinesContent()
+    {
+        String content = this.getTotalContent();
+        ArrayList<String> contentLines = new ArrayList<>();
+        Scanner scanner = new Scanner(content);
+
+        while (scanner.hasNextLine())
+        {
+            contentLines.add(scanner.nextLine());
+        }
+
+        scanner.close();
+        return contentLines;
+    }
+
+    public boolean searchString(String str)
+    {
+        ArrayList<String> linesContent = this.getLinesContent();
+
+        for(int i = 0; i < linesContent.size(); i++)
+        {
+            if(linesContent.get(i).contains(str))
+            {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
+    @Override 
+    public String toString()
+    {
+        return this.getTotalContent();
     }
 }

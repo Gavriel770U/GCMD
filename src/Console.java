@@ -5,12 +5,21 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/* GCMD Console class */
+
 public class Console implements KeyListener
 {
     /* CONSTANTS */
     private final static int FRAME_WIDTH = 600;
     private final static int FRAME_HEIGHT = 400;
     private final static String CONSOLE_TITLE = "GCMD - Gavriel's Command Line Console";
+
+    private final static int NEWLINE_CHAR = '\n';
+    private final static int SHIFT_INT_VALUE = 65535;
+    private final static int BACKSPACE_INT_VALUE = 8;
+    private final static int EMPTY_STRING_LENGTH = 0;
+    private final static int DEC = 1;
+    private final static int ZERO_INDEX = 0;
 
     /* PARAMETERS */
     private JFrame frame;
@@ -73,21 +82,21 @@ public class Console implements KeyListener
         this.multilineVisualOutput.clear();
         char c = e.getKeyChar();
         println((int)(c));
-        if('\n' == c)
+        if(NEWLINE_CHAR == c)
         {
             this.output += "\n> ";
             //this.multilineVisualOutput.write("\n> ");
         }
-        else if(65535 == (int)(c))
+        else if(SHIFT_INT_VALUE == (int)(c))
         {
             /* skip Shifts */
         }
-        else if(8 == (int)(c))
+        else if(BACKSPACE_INT_VALUE == (int)(c))
         {
-            if(output.length() > 0)
+            if(this.output.length() > EMPTY_STRING_LENGTH)
             {
                 /* Backspace has been pressed */
-                this.output = this.output.substring(0, this.output.length() - 1);
+                this.output = this.output.substring(ZERO_INDEX, this.output.length() - DEC);
                 //this.multilineVisualOutput.delete(1);
             }
         }
@@ -98,7 +107,7 @@ public class Console implements KeyListener
         }
 
         this.multilineVisualOutput.write(this.output);
-        this.parser.parse();
+        this.parser.highlight();
 
         println((int)c);
     }

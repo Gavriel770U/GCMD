@@ -16,6 +16,7 @@ echo <TEXT>
 background <RED_VALUE> <GREEN_VALUE> <BLUE_VALUE>
 background <DEFAULT_COLOR>
 exit
+clear
 
 Font (Default) - Consolas
 Regular Text (Default) - White
