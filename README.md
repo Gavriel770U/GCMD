@@ -64,14 +64,20 @@ In the **Min JRE version** field write `1.4.0`
 
 Then, press on ![image](https://github.com/Gavriel770U/GCMD/assets/71229809/23b481bd-abbb-4b70-8802-6a2a163cecd4) and choose a file directory and name that ends with `.exe` where the output executable shall be saved.
 __________________________________________________________________
-## Features
-### Keywords Highlighting 
+# Features
+## Keywords Highlighting 
 For now it is very simple and has some issues that should be fixed.
 ![image](https://github.com/Gavriel770U/GCMD/assets/71229809/e410dc64-79a6-433b-a4a6-4abdbbde113e)
-### Commands (Shall be added soon...)
-* help
+## Commands (Shall be added soon...)
+### * help
+Command that prints the list of commands and what do they do.
 * about
-* echo
+### * echo
+Command that prints all the text after the echo command, like real echo.
 * background
-* exit
+### * exit
+Command that exists the GCMD.
 * clear
+### Preview
+![image](https://github.com/Gavriel770U/GCMD/assets/71229809/cc4325c8-7082-4128-9120-47a6f023dedd)
+
