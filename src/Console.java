@@ -28,6 +28,7 @@ public class Console implements KeyListener
     private MultilineLabel multilineVisualOutput;
     private String output = "> ";
     private Parser parser;
+    private ParserResult parserResult;
 
     /* FUNCTIONS */
     private <T> void print(T info)
@@ -79,12 +80,30 @@ public class Console implements KeyListener
     @Override
     public void keyReleased(KeyEvent e)
     {
-        this.multilineVisualOutput.clear();
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e)
+    {
         char c = e.getKeyChar();
         println((int)(c));
         if(NEWLINE_CHAR == c)
         {
             this.output += "\n> ";
+            this.parserResult = this.parser.parse();
+            if(this.parserResult.exitFlag)
+            {
+                System.exit(0);
+            }    
+            else if( this.parserResult.output.contains("command not found"))
+            {
+                this.output += this.parserResult.output+"\n> ";
+            }
+            else
+            {
+                this.output += this.parserResult.output;
+            }
+            println(this.parserResult.output);
             //this.multilineVisualOutput.write("\n> ");
         }
         else if(SHIFT_INT_VALUE == (int)(c))
@@ -105,16 +124,11 @@ public class Console implements KeyListener
             this.output += c;
             //this.multilineVisualOutput.write(Character.toString(c));
         }
-
+        this.multilineVisualOutput.clear();
         this.multilineVisualOutput.write(this.output);
         this.parser.highlight();
 
         println((int)c);
-    }
-
-    @Override
-    public void keyTyped(KeyEvent e)
-    {
     }
 
     @Override
