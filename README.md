@@ -23,11 +23,11 @@ Use the following commands in your OS cmd to create `.jar`:
 
 NOTE: before it, switch your directory to the `src` directory.
 
-`javac -d ../build *.java`
+| `javac -d ../build *.java`
 
-`cd ../build`
+| `cd ../build`
 
-`jar cfm GCMD.jar MANIFEST.MF *.class`
+| `jar cfm GCMD.jar MANIFEST.MF *.class`
 ### EXE
 `.exe` of the current version of the GCMD exists in the source's main branch, and it is the easiest way to run GCMD.
 
