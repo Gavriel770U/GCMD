@@ -80,13 +80,13 @@ For now it is very simple and has some issues that should be fixed.
 ## Commands (Shall be added soon...)
 ### * help
 Command that prints the list of commands and what do they do.
-* about
+### * about
 ### * echo
 Command that prints all the text after the echo command, like real echo.
-* background
+### * background
 ### * exit
 Command that exists the GCMD.
-* clear
+### * clear
 ### Preview
 ![image](https://github.com/Gavriel770U/GCMD/assets/71229809/cc4325c8-7082-4128-9120-47a6f023dedd)
 
