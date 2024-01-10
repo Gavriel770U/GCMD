@@ -11,9 +11,13 @@ Run `main.java` in your IDE.
 ### Your OS cmd
 Use the following commands from the folder where you have saved the source code:
 
-`javac *.java`
+```
+javac *.java`
+```
 
-`java main.java`
+```
+java main.java
+```
 ### Jar
 Jar is basically a java executable, in this source in the `build` folder there will be all `.class` files and manifest (`.MF`) with `.jar`, so only if you update the code you can run this.
 
